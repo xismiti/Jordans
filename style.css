@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100&display=swap');
+
+
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Roboto', sans-serif;
+}
+
+
+body{
+}
+
+
+.first-section-container{
+
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    width: 100vw;
+    height: 900px;
+    background-image: url(background-image.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.jordan-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 200px;
+    background-color: #ffffffa6;
+    padding: 10px 0px;
+    
+}
+#jordan-logo{
+    width: 150px;
+    animation: float 6s ease-in-out infinite;
+}
+
+.second-section-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(graffiti-image.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #FBFFF1;
+    text-align: center;
+
+}
+#second-section-title{
+    margin: 50px 0px 50px 0px;
+    font-weight:100;
+    font-size:60pt;
+}
+#img-jordans-collored{
+    background-color: #FBFFF1;
+    width: 600px;
+    height: 400px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    filter: saturate(0%);
+}
+#img-jordans-collored:hover{
+
+    transform: scale(1.1);
+    filter: saturate(100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ANIMATIONS*/
+
+@keyframes float{
+	0%,100%{
+
+		transform:translatey(0) scale(1)
+	}
+	50%{
+	
+		transform:translatey(-10px) scale(1.1)
+	}
+}
