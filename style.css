@@ -1,61 +1,62 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100&display=swap');
 
 
 
-*{
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- font-family: 'Roboto', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 
-.first-section-container{
+.first-section-container {
 
     display: flex;
     align-items: center;
-    justify-content:center ;
-    width: 100vw;
+    justify-content: center;
+    width: 100%;
     height: 90vh;
     background-image: url(img/background-image.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
-.jordan-center{
+
+.jordan-center {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     height: 150px;
-    background:linear-gradient(to right, transparent, #Ffffff , transparent);
+    background: linear-gradient(to right, transparent, #Ffffff, transparent);
     padding: 10px 0px;
-        
+
 }
-#jordan-logo{
+
+#jordan-logo {
     width: 150px;
 }
 
-.divisory{
+.divisory {
     background-color: black;
     background-image: url(img/nike-logo.png);
     background-position: center;
     background-size: contain;
-    width: 100vw;
+    width: 100%;
     height: 30px;
 
 }
 
-.second-section-container{
+.second-section-container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     height: 900px;
-    width: 100vw;
+    width: 100%;
     background-image: url(img/graffiti-image.png);
     background-attachment: fixed;
     background-position: center;
@@ -65,14 +66,16 @@
     text-align: center;
 
 }
-#second-section-title{
+
+#second-section-title {
     margin-top: 30px;
     padding: 20px 0px;
     text-align: center;
-    font-weight:100;
+    font-weight: 100;
     font-size: 40pt;
 }
-#img-jordans-collored{
+
+#img-jordans-collored {
     background-color: #FBFFF1;
     width: 600px;
     height: 400px;
@@ -81,20 +84,194 @@
     transition: 1s ease-in-out;
     filter: saturate(0%);
 }
-#img-jordans-collored:hover{
+
+#img-jordans-collored:hover {
 
     transform: scale(1.1);
     filter: saturate(100%);
 }
 
+.jordans-section-container {
+
+    background-color: #D3F1EA;
+    height: 900px;
+
+}
+
+header {
+
+    width: 100%;
+    height: 180px;
+    background-color: #e2e2e2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.jordans-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 720px;
+
+}
+
+.jordans {
+
+    width: 350px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    filter: saturate(0%);
+}
+
+.jordans:hover {
+    transform: scale(1.2);
+    filter: saturate(100%);
+}
+
+.jordan-chicago {
 
 
+    display: none;
+
+    height: 900px;
+
+}
+
+#chicago-header {
+    background-color: #A6242C;
+}
+.chicago-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 720px;
+    background-color: #A6242C;
+}
+.left{
+    background-color: #F6F6F6;
+    width: 50vw;
+    height:720px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.left>h1{
+    font-size: 30pt;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.left>p{
+    width: 35vw;
+    font-size: 20pt;
+    text-align: center;
+    background-color: #030303;
+    color: white;
+    font-weight: 100;
+    padding: 20px;
+    border-radius: 10px;
+}
+.right{
+    background-color: #D0D5D9;
+    position: relative;
+    width: 50vw;
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    overflow: hidden;
+    filter: saturate(0%);
+    transition: 1s ease;
+}
+.right:hover{
+    filter: saturate(100%);
+}
+.right img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+#jordan-graffiti{
+    opacity: 0%;
+    transition: 0.5s ease;
+
+}
+#jordan-graffiti:hover{
+    opacity: 100%;
+}
+#chicago-logo:hover{
+    animation: bull 1s ease-in-out ;
+    cursor: pointer;
+    
+}
+.jordan-sneaker{
+    transition: 0.5s ease;
+}
+.jordan-sneaker:hover{
+    transform: scale(1.1)
+
+}
+
+.jordan-offwhite {
+    display: none;
+    height: 900px;
+}
+
+#offwhite-header {
+    background-color: #5DC5FF;
+}
+
+.jordan-travis {
+
+    height: 900px;
+    display: none;
+}
 
 
+#travis-header {
+
+    background-color: #7C5A50;
+}
+
+input{
+    position: relative;
+    top: 5%;
+    left: 0;
+    padding: 10px;
+    font-size: 20pt;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #030303;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+input:hover{
+    transform: rotate(360deg) scale(1.2);
+    background-color: gray;
+
+}
 
 
-
-
+footer{
+    color: white;
+    background-color: #030303;
+    font-size: 12pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4vh;
+}
 
 
 
@@ -103,3 +280,20 @@
 /* ANIMATIONS*/
 
 
+@keyframes bull {
+	0% {
+		transform: rotate(0deg)
+	}
+	33% {
+		
+		transform: rotate(-30deg)
+	}
+    66% {
+		
+		transform: rotate(30deg)
+	}
+	100% {
+
+		transform: rotate(0deg)
+    }
+}
