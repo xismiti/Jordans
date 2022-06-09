@@ -11,18 +11,14 @@
 }
 
 
-body{
-}
-
-
 .first-section-container{
 
     display: flex;
     align-items: center;
     justify-content:center ;
     width: 100vw;
-    height: 900px;
-    background-image: url(background-image.jpg);
+    height: 90vh;
+    background-image: url(img/background-image.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -34,14 +30,23 @@ body{
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 200px;
-    background-color: #ffffffa6;
+    height: 150px;
+    background:linear-gradient(to right, transparent, #Ffffff , transparent);
     padding: 10px 0px;
-    
+        
 }
 #jordan-logo{
     width: 150px;
-    animation: float 6s ease-in-out infinite;
+}
+
+.divisory{
+    background-color: black;
+    background-image: url(img/nike-logo.png);
+    background-position: center;
+    background-size: contain;
+    width: 100vw;
+    height: 30px;
+
 }
 
 .second-section-container{
@@ -49,9 +54,9 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
+    height: 900px;
     width: 100vw;
-    background-image: url(graffiti-image.png);
+    background-image: url(img/graffiti-image.png);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -61,9 +66,11 @@ body{
 
 }
 #second-section-title{
-    margin: 50px 0px 50px 0px;
+    margin-top: 30px;
+    padding: 20px 0px;
+    text-align: center;
     font-weight:100;
-    font-size:60pt;
+    font-size: 40pt;
 }
 #img-jordans-collored{
     background-color: #FBFFF1;
@@ -95,13 +102,4 @@ body{
 
 /* ANIMATIONS*/
 
-@keyframes float{
-	0%,100%{
 
-		transform:translatey(0) scale(1)
-	}
-	50%{
-	
-		transform:translatey(-10px) scale(1.1)
-	}
-}
