@@ -22,7 +22,13 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    filter: saturate(0%);
+    transition: 0.5s ease-in-out;
 
+}
+.first-section-container:hover{
+
+    filter: saturate(100%);
 }
 
 .jordan-center {
@@ -33,6 +39,7 @@
     height: 150px;
     background: linear-gradient(to right, transparent, #Ffffff, transparent);
     padding: 10px 0px;
+    transition: 5s ease-in-out;
 
 }
 
@@ -93,7 +100,12 @@
 
 .jordans-section-container {
 
-    background-color: #D3F1EA;
+    background-color: #5acaec;
+    background-image: url(img/background-cloud.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
     height: 900px;
 
 }
@@ -143,6 +155,9 @@ header {
 #chicago-header {
     background-color: #A6242C;
 }
+
+
+
 .chicago-container{
     display: flex;
     justify-content: center;
@@ -167,7 +182,7 @@ header {
 }
 .left>p{
     width: 35vw;
-    font-size: 20pt;
+    font-size: 16pt;
     text-align: center;
     background-color: #030303;
     color: white;
@@ -177,6 +192,12 @@ header {
 }
 .right{
     background-color: #D0D5D9;
+    background-image: url(img/background-wall.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
     position: relative;
     width: 50vw;
     height: 720px;
@@ -194,22 +215,16 @@ header {
 .right img{
     position: absolute;
     top:0;
-    left: 0;
+    left: 15%;
     width: 100%;
     height: 100%;
     object-fit: contain;
+    mix-blend-mode:multiply;
+}
 
-}
-#jordan-graffiti{
-    opacity: 0%;
-    transition: 0.5s ease;
 
-}
-#jordan-graffiti:hover{
-    opacity: 100%;
-}
 #chicago-logo:hover{
-    animation: bull 1s ease-in-out ;
+    animation: bull 0.5s ease-in-out ;
     cursor: pointer;
     
 }
@@ -286,11 +301,11 @@ footer{
 	}
 	33% {
 		
-		transform: rotate(-30deg)
+		transform: rotate(-20deg)
 	}
     66% {
 		
-		transform: rotate(30deg)
+		transform: rotate(20deg)
 	}
 	100% {
 
